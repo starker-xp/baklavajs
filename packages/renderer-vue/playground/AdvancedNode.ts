@@ -1,4 +1,4 @@
-import { INodeState, NodeInterface, AbstractNode, CalculateFunction } from "@baklavajs/core";
+import { INodeState, NodeInterface, AbstractNode, CalculateFunction } from "@starker-xp/baklavajs-core";
 import { ButtonInterface } from "../src";
 
 export default class AdvancedNode extends AbstractNode {

@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import { computed, defineComponent, toRef, StyleValue } from "vue";
-import { AbstractNode } from "@baklavajs/core";
+import { AbstractNode } from "@starker-xp/baklavajs-core";
 import { useDragMove } from "../src";
 
 export default defineComponent({

@@ -1,5 +1,5 @@
 import { type ComponentOptions, markRaw } from "vue";
-import { NodeInterface } from "@baklavajs/core";
+import { NodeInterface } from "@starker-xp/baklavajs-core";
 import ButtonInterfaceComponent from "./ButtonInterface.vue";
 
 export class ButtonInterface extends NodeInterface<undefined> {

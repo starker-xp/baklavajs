@@ -1,4 +1,4 @@
-import { defineDynamicNode, DynamicNodeDefinition } from "@baklavajs/core";
+import { defineDynamicNode, DynamicNodeDefinition } from "@starker-xp/baklavajs-core";
 import { CheckboxInterface, NumberInterface, SelectInterface, TextInputInterface, TextInterface } from "../src";
 
 export default defineDynamicNode({

@@ -12,10 +12,10 @@ import ApiLink from "../components/ApiLink.vue";
 Sometimes you may want to have nodes, that have a different set interfaces based on certain parameters.
 For example, a `Math Node` that can add or subtract two numeric values, but also calculate the sine of a single number.
 
-To easily implement this, you can use the <code><ApiLink type="functions" module="@baklavajs/core" name="defineDynamicNode">defineDynamicNode</ApiLink></code> function:
+To easily implement this, you can use the <code><ApiLink type="functions" module="@starker-xp/baklavajs-core" name="defineDynamicNode">defineDynamicNode</ApiLink></code> function:
 
 ```js
-import { defineDynamicNode, NodeInterface, NumberInterface, SelectInterface } from "baklavajs";
+import { defineDynamicNode, NodeInterface, NumberInterface, SelectInterface } from "@starker-xp/baklavajs";
 
 export default defineDynamicNode({
     type: "DynamicMathNode",

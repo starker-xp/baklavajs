@@ -88,7 +88,7 @@
 <script setup lang="ts">
 import { computed, provide, Ref, ref, toRef } from "vue";
 
-import { AbstractNode } from "@baklavajs/core";
+import { AbstractNode } from "@starker-xp/baklavajs-core";
 import { IBaklavaViewModel } from "../viewModel";
 import { providePlugin, useDragMove } from "../utility";
 import { usePanZoom } from "./panZoom";
@@ -128,7 +128,7 @@ const nodeContainerStyle = computed(() => ({
     ...panZoom.styles.value,
 }));
 
-// Reason: https://github.com/newcat/baklavajs/issues/54
+// Reason: https://github.com/starker-xp/baklavajs/issues/54
 const counter = ref(0);
 props.viewModel.editor.hooks.load.subscribe(token, (s) => {
     counter.value++;

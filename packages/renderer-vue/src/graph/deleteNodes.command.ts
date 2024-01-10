@@ -1,5 +1,5 @@
 import { Ref } from "vue";
-import { Graph } from "@baklavajs/core";
+import { Graph } from "@starker-xp/baklavajs-core";
 import type { ICommand, ICommandHandler } from "../commands";
 
 export const DELETE_NODES_COMMAND = "DELETE_NODES";

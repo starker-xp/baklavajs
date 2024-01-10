@@ -18,10 +18,10 @@
 </template>
 
 <script setup lang="ts">
-import { NodeInstanceOf } from "@baklavajs/core";
+import { NodeInstanceOf } from "@starker-xp/baklavajs-core";
 import { EditorComponent, Components, SelectInterface, useBaklava, Commands } from "../src";
-import { DependencyEngine, applyResult } from "@baklavajs/engine";
-import { BaklavaInterfaceTypes } from "@baklavajs/interface-types";
+import { DependencyEngine, applyResult } from "@starker-xp/baklavajs-engine";
+import { BaklavaInterfaceTypes } from "@starker-xp/baklavajs-interface-types";
 
 import TestNode from "./TestNode";
 import OutputNode from "./OutputNode";

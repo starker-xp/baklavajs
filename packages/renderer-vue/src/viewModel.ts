@@ -1,6 +1,6 @@
 import { computed, reactive, ref, Ref, shallowReadonly, watch } from "vue";
-import { AbstractNode, Editor, Graph, GraphTemplate, NodeInterface } from "@baklavajs/core";
-import { IBaklavaTapable, SequentialHook } from "@baklavajs/events";
+import { AbstractNode, Editor, Graph, GraphTemplate, NodeInterface } from "@starker-xp/baklavajs-core";
+import { IBaklavaTapable, SequentialHook } from "@starker-xp/baklavajs-events";
 
 import { ICommandHandler, useCommandHandler } from "./commands";
 import { IClipboard, useClipboard } from "./clipboard";

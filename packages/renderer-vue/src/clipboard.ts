@@ -1,6 +1,14 @@
 import { computed, reactive, Ref, ref } from "vue";
 import { v4 as uuidv4 } from "uuid";
-import { AbstractNode, INodeState, IConnectionState, Connection, NodeInterface, Editor, Graph } from "@baklavajs/core";
+import {
+    AbstractNode,
+    INodeState,
+    IConnectionState,
+    Connection,
+    NodeInterface,
+    Editor,
+    Graph,
+} from "@starker-xp/baklavajs-core";
 import {
     CommitTransactionCommand,
     COMMIT_TRANSACTION_COMMAND,

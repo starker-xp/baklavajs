@@ -1,4 +1,4 @@
-import { NodeInterfaceType } from "@baklavajs/interface-types";
+import { NodeInterfaceType } from "@starker-xp/baklavajs-interface-types";
 import "./interfaceTypes.css";
 
 export const stringType = new NodeInterfaceType<string>("string");

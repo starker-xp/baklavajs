@@ -1,4 +1,4 @@
-import { Editor } from "@baklavajs/core";
+import { Editor } from "@starker-xp/baklavajs-core";
 import { ForwardEngine } from "../src/forwardEngine";
 import { TestNode } from "./testNode";
 

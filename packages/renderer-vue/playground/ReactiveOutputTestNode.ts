@@ -1,5 +1,5 @@
 import { markRaw } from "vue";
-import { NodeInterface, defineNode } from "@baklavajs/core";
+import { NodeInterface, defineNode } from "@starker-xp/baklavajs-core";
 import ReactiveOutputTest from "./ReactiveOutputTest.vue";
 
 class ReactiveOutputTestInterface extends NodeInterface<number> {

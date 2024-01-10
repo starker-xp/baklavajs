@@ -1,5 +1,5 @@
 /**
- * @module @baklavajs/renderer-vue
+ * @module @starker-xp/baklavajs-renderer-vue
  */
 
 export { default as EditorComponent } from "./editor/Editor.vue";

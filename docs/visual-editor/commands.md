@@ -4,14 +4,14 @@ import ApiLink from "../components/ApiLink.vue";
 
 # Commands
 
-Commands are an abstraction to allow for extension of actions in Baklava. You can do everything related to commands using the <ApiLink type="interfaces" module="@baklavajs/renderer-vue" name="ICommandHandler"><code>useBaklava</code></ApiLink>
+Commands are an abstraction to allow for extension of actions in Baklava. You can do everything related to commands using the <ApiLink type="interfaces" module="@starker-xp/baklavajs-renderer-vue" name="ICommandHandler"><code>useBaklava</code></ApiLink>
 
 ## Executing existing commands
 
 You can invoke an existing command by its name:
 
 ```ts
-import { Commands } from "@baklavajs/renderer-vue";
+import { Commands } from "@starker-xp/baklavajs-renderer-vue";
 
 viewModel.commandHandler.executeCommand<Commands.UndoCommand>(Commands.UNDO_COMMAND);
 ```

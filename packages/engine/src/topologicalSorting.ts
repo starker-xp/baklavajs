@@ -1,4 +1,4 @@
-import { AbstractNode, Graph, IConnection } from "@baklavajs/core";
+import { AbstractNode, Graph, IConnection } from "@starker-xp/baklavajs-core";
 
 export interface ITopologicalSortingResult {
     calculationOrder: AbstractNode[];

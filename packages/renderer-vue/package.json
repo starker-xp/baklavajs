@@ -1,9 +1,9 @@
 {
-    "name": "@baklavajs/renderer-vue",
+    "name": "@starker-xp/baklavajs-renderer-vue",
     "version": "2.3.0",
     "description": "Vue frontend for BaklavaJS",
     "author": "newcat <freddy.wagner@web.de>",
-    "homepage": "https://newcat.github.io/baklavajs",
+    "homepage": "https://github.com/starker-xp/baklavajs",
     "license": "MIT",
     "type": "module",
     "files": [
@@ -25,14 +25,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/newcat/baklavajs.git"
+        "url": "git+https://github.com/starker-xp/baklavajs.git"
     },
     "bugs": {
-        "url": "https://github.com/newcat/baklavajs/issues"
+        "url": "https://github.com/starker-xp/baklavajs/issues"
     },
     "dependencies": {
-        "@baklavajs/core": "^2.3.0",
-        "@baklavajs/events": "^2.3.0"
+        "@starker-xp/baklavajs-core": "^2.3.0",
+        "@starker-xp/baklavajs-events": "^2.3.0"
     },
     "devDependencies": {
         "@types/resize-observer-browser": "^0.1.11",

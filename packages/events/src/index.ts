@@ -1,5 +1,5 @@
 /**
- * @module @baklavajs/events
+ * @module @starker-xp/baklavajs-events
  */
 
 export * from "./event";

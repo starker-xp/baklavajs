@@ -1,8 +1,8 @@
 // eslint-disable-next-line @typescript-eslint/triple-slash-reference
 /// <reference path="../src/overrides.ts" />
 
-import { defineNode, NodeInterface } from "@baklavajs/core";
-import { setType } from "@baklavajs/interface-types";
+import { defineNode, NodeInterface } from "@starker-xp/baklavajs-core";
+import { setType } from "@starker-xp/baklavajs-interface-types";
 import { TextInputInterface } from "../src";
 import { stringType } from "./interfaceTypes";
 

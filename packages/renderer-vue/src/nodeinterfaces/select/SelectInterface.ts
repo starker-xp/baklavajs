@@ -1,5 +1,5 @@
 import { type ComponentOptions, markRaw } from "vue";
-import { NodeInterface } from "@baklavajs/core";
+import { NodeInterface } from "@starker-xp/baklavajs-core";
 import SelectInterfaceComponent from "./SelectInterface.vue";
 
 export interface IAdvancedSelectInterfaceItem<V> {

@@ -21,7 +21,7 @@ There are two approaches for defining node types:
 This is the recommended way to create node types as it is easier to understand what's happening and provides more type safety when using TypeScript.
 The `defineNode` function is similar to the `defineComponent` function of Vue (hence the name). It expects a single argument, which is an object defining the node type.
 
-You can find all the properties of the object <ApiLink type="interfaces" module="@baklavajs/core" name="INodeDefinition">here</ApiLink>, but these are the most important ones:
+You can find all the properties of the object <ApiLink type="interfaces" module="@starker-xp/baklavajs-core" name="INodeDefinition">here</ApiLink>, but these are the most important ones:
 
 -   `type`: This is the only required property. The node type is used for saving and loading graphs, for example. It can essentially be seen as the name of your class. Therefore, it has to be unique.
 -   `title`: (_optional_) The default title of the node. If this property isn't specified, the `type` is used as the default title. (Note that users can rename nodes, so don't rely on the title for identifying nodes).
@@ -34,7 +34,7 @@ Additionally, you can provide [lifecycle callbacks](./lifecycle).
 Let's put it all together into an example. In this case, we want to have a node that receives two numbers, performs an arithmetic operation on them and outputs the result. This means we need three inputs (the two numbers and the arithmetic operation) and one output (the result of the calculation):
 
 ```ts
-import { defineNode, NodeInterface, NumberInterface, SelectInterface } from "baklavajs";
+import { defineNode, NodeInterface, NumberInterface, SelectInterface } from "@starker-xp/baklavajs";
 
 export default defineNode({
     type: "MathNode",
@@ -74,7 +74,7 @@ Although it doesn't really make sense to use it in this case, here is the `MathN
 <CodeGroupItem title="TS">
 
 ```ts
-import { Node, NodeInterface, CalculateFunction, NumberInterface, SelectInterface } from "baklavajs";
+import { Node, NodeInterface, CalculateFunction, NumberInterface, SelectInterface } from "@starker-xp/baklavajs";
 
 interface Inputs {
     number1: number;
@@ -115,7 +115,7 @@ export default class MathNode extends Node<Inputs, Outputs> {
             throw new Error("Unknown operation: " + operation);
         }
         return { output };
-    }
+    };
 }
 ```
 
@@ -124,7 +124,7 @@ export default class MathNode extends Node<Inputs, Outputs> {
 <CodeGroupItem title="JS">
 
 ```js
-import { Node, NodeInterface, NumberInterface, SelectInterface } from "baklavajs";
+import { Node, NodeInterface, NumberInterface, SelectInterface } from "@starker-xp/baklavajs";
 
 export default class MathNode extends Node {
     constructor() {
@@ -143,11 +143,9 @@ export default class MathNode extends Node {
             let output;
             if (operation === "Add") {
                 output = number1 + number2;
-            }
-            else if (operation === "Subtract") {
+            } else if (operation === "Subtract") {
                 output = number1 - number2;
-            }
-            else {
+            } else {
                 throw new Error("Unknown operation: " + operation);
             }
             return { output };

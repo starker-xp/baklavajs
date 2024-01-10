@@ -1,4 +1,4 @@
-import { Editor } from "@baklavajs/core";
+import { Editor } from "@starker-xp/baklavajs-core";
 import { applyResult } from "../src";
 import { TestNode } from "./testNode";
 

@@ -1,6 +1,6 @@
-import { NodeInterface, defineNode } from "@baklavajs/core";
-import { allowMultipleConnections } from "@baklavajs/engine";
-import { setTypeForMultipleConnections } from "@baklavajs/interface-types";
+import { NodeInterface, defineNode } from "@starker-xp/baklavajs-core";
+import { allowMultipleConnections } from "@starker-xp/baklavajs-engine";
+import { setTypeForMultipleConnections } from "@starker-xp/baklavajs-interface-types";
 import { stringType } from "./interfaceTypes";
 import { TextInterface } from "../src";
 

@@ -8,12 +8,12 @@ Baklava offers many levels of customization, from simple theming up to full-blow
 
 ## Theming
 
-You can use a theme by installing the `@baklavajs/themes` package and importing the theme-specific CSS file.
+You can use a theme by installing the `@starker-xp/baklavajs-themes` package and importing the theme-specific CSS file.
 
 For example:
 
 ```js
-import "@baklavajs/themes/syrup-dark.css";
+import "@starker-xp/baklavajs-themes/syrup-dark.css";
 ```
 
 There are currently two themes available:
@@ -23,7 +23,7 @@ There are currently two themes available:
 
 Baklava's themes make heavy use of CSS variables.
 This means that you can easily change colors or other visual properties by overriding the values of the variables in your CSS.
-Check out [this file](https://github.com/newcat/baklavajs/blob/master/packages/themes/src/classic/variables.scss) for a list of variables.
+Check out [this file](https://github.com/starker-xp/baklavajs/blob/master/packages/themes/src/classic/variables.scss) for a list of variables.
 
 ## CSS Classes
 
@@ -44,38 +44,38 @@ For example, to make all nodes of type `MyNodeType` have a blue background, you 
 If these options don't fulfill your needs for customization, you can provide custom components.
 For this, the editor provides the following slots:
 
--   `background` [(default component)](https://github.com/newcat/baklavajs/blob/master/packages/renderer-vue/src/editor/Background.vue)
--   `toolbar` [(default component)](https://github.com/newcat/baklavajs/blob/master/packages/renderer-vue/src/toolbar/Toolbar.vue)
--   `palette` [(default component)](https://github.com/newcat/baklavajs/blob/master/packages/renderer-vue/src/nodepalette/NodePalette.vue)
--   `connection` [(default component)](https://github.com/newcat/baklavajs/blob/master/packages/renderer-vue/src/connection/ConnectionWrapper.vue)
+-   `background` [(default component)](https://github.com/starker-xp/baklavajs/blob/master/packages/renderer-vue/src/editor/Background.vue)
+-   `toolbar` [(default component)](https://github.com/starker-xp/baklavajs/blob/master/packages/renderer-vue/src/toolbar/Toolbar.vue)
+-   `palette` [(default component)](https://github.com/starker-xp/baklavajs/blob/master/packages/renderer-vue/src/nodepalette/NodePalette.vue)
+-   `connection` [(default component)](https://github.com/starker-xp/baklavajs/blob/master/packages/renderer-vue/src/connection/ConnectionWrapper.vue)
     -   Props:
-        -   `connection` (type: <code><ApiLink type="classes" module="@baklavajs/core" name="Connection">Connection</ApiLink></code>)
--   `temporaryConnection` [(default component)](https://github.com/newcat/baklavajs/blob/master/packages/renderer-vue/src/connection/TemporaryConnection.vue)
+        -   `connection` (type: <code><ApiLink type="classes" module="@starker-xp/baklavajs-core" name="Connection">Connection</ApiLink></code>)
+-   `temporaryConnection` [(default component)](https://github.com/starker-xp/baklavajs/blob/master/packages/renderer-vue/src/connection/TemporaryConnection.vue)
     -   Props:
-        -   `temporaryConnection` (type: <code><ApiLink type="interfaces" module="@baklavajs/core" name="ITemporaryConnection">ITemporaryConnection</ApiLink> | null</code>)
--   `node` [(default component)](https://github.com/newcat/baklavajs/blob/master/packages/renderer-vue/src/node/Node.vue)
+        -   `temporaryConnection` (type: <code><ApiLink type="interfaces" module="@starker-xp/baklavajs-core" name="ITemporaryConnection">ITemporaryConnection</ApiLink> | null</code>)
+-   `node` [(default component)](https://github.com/starker-xp/baklavajs/blob/master/packages/renderer-vue/src/node/Node.vue)
     -   Props:
-        -   `node` (type: <code><ApiLink type="classes" module="@baklavajs/core" name="AbstractNode">AbstractNode</ApiLink></code>)
+        -   `node` (type: <code><ApiLink type="classes" module="@starker-xp/baklavajs-core" name="AbstractNode">AbstractNode</ApiLink></code>)
         -   `selected` (type: `boolean`)
         -   `select` (type: `() => void`) callback for node being selected
--   `sidebar` [(default component)](https://github.com/newcat/baklavajs/blob/master/packages/renderer-vue/src/sidebar/Sidebar.vue)
--   `minimap` [(default component)](https://github.com/newcat/baklavajs/blob/master/packages/renderer-vue/src/components/Minimap.vue)
--   `contextMenu` [(default component)](https://github.com/newcat/baklavajs/blob/master/packages/renderer-vue/src/components/ContextMenu.vue)
-    - Props:
-        - `contextMenu` (type: return value of [`useContextMenu`](https://github.com/newcat/baklavajs/blob/master/packages/renderer-vue/src/contextMenu.ts))
+-   `sidebar` [(default component)](https://github.com/starker-xp/baklavajs/blob/master/packages/renderer-vue/src/sidebar/Sidebar.vue)
+-   `minimap` [(default component)](https://github.com/starker-xp/baklavajs/blob/master/packages/renderer-vue/src/components/Minimap.vue)
+-   `contextMenu` [(default component)](https://github.com/starker-xp/baklavajs/blob/master/packages/renderer-vue/src/components/ContextMenu.vue)
+    -   Props:
+        -   `contextMenu` (type: return value of [`useContextMenu`](https://github.com/starker-xp/baklavajs/blob/master/packages/renderer-vue/src/contextMenu.ts))
 
 There are other components that provide slots as well:
 
-- Node
-  - `nodeInterface` [(default component)](https://github.com/newcat/baklavajs/blob/master/packages/renderer-vue/src/node/NodeInterface.vue)
-    - Props:
-      - `type` (type: `"input"|"output"`)
-      - `node` (type: <code><ApiLink type="classes" module="@baklavajs/core" name="AbstractNode">AbstractNode</ApiLink></code>)
-      - `intf` (type: <code><ApiLink type="classes" module="@baklavajs/core" name="NodeInterface">NodeInterface</ApiLink></code>)
-- NodeInterface
-  - `portTooltip` [(default component)](https://github.com/newcat/baklavajs/blob/master/packages/renderer-vue/src/node/NodeInterface.vue#L11-L13)
-    - Props:
-      - `showTooltip` (type: `boolean`)
+-   Node
+    -   `nodeInterface` [(default component)](https://github.com/starker-xp/baklavajs/blob/master/packages/renderer-vue/src/node/NodeInterface.vue)
+        -   Props:
+            -   `type` (type: `"input"|"output"`)
+            -   `node` (type: <code><ApiLink type="classes" module="@starker-xp/baklavajs-core" name="AbstractNode">AbstractNode</ApiLink></code>)
+            -   `intf` (type: <code><ApiLink type="classes" module="@starker-xp/baklavajs-core" name="NodeInterface">NodeInterface</ApiLink></code>)
+-   NodeInterface
+    -   `portTooltip` [(default component)](https://github.com/starker-xp/baklavajs/blob/master/packages/renderer-vue/src/node/NodeInterface.vue#L11-L13)
+        -   Props:
+            -   `showTooltip` (type: `boolean`)
 
 So, for example, if you want to use a custom component for a certain node type, you could do it like this:
 
@@ -90,7 +90,7 @@ So, for example, if you want to use a custom component for a certain node type, 
 </template>
 
 <script setup>
-import { Editor, Components } from "@baklavajs/renderer-vue";
+import { Editor, Components } from "@starker-xp/baklavajs-renderer-vue";
 const BaklavaNode = Components.Node;
 
 // example, replace with your component:

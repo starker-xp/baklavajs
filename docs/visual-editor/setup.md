@@ -6,7 +6,7 @@ import ApiLink from "../components/ApiLink.vue";
 
 ## View Model
 
-There is one key component you need when using the visual editor: the _view model_. You can create a new view model by using the <ApiLink type="functions" module="@baklavajs/renderer-vue" name="useBaklava"><code>useBaklava</code></ApiLink> function. The view model has the following type:
+There is one key component you need when using the visual editor: the _view model_. You can create a new view model by using the <ApiLink type="functions" module="@starker-xp/baklavajs-renderer-vue" name="useBaklava"><code>useBaklava</code></ApiLink> function. The view model has the following type:
 
 ```ts
 interface IBaklavaViewModel {
@@ -46,8 +46,8 @@ Now you can pass the view model to the editor component:
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { EditorComponent, useBaklava } from "@baklavajs/renderer-vue";
-import "@baklavajs/themes/syrup-dark.css";
+import { EditorComponent, useBaklava } from "@starker-xp/baklavajs-renderer-vue";
+import "@starker-xp/baklavajs-themes/syrup-dark.css";
 
 export default defineComponent({
     components: {
@@ -62,6 +62,7 @@ export default defineComponent({
 ```
 
 ## Settings
+
 Settings can be changed by accessing the `settings` property of the view model right after creating it or reactively at any moment later.
 
 For example, to enable displaying the value of a node interface on hover:
@@ -71,4 +72,4 @@ const baklava = useBaklava();
 baklava.settings.displayValueOnHover = true;
 ```
 
-You can find all available settings <ApiLink type="interfaces" module="@baklavajs/renderer-vue" name="IViewSettings">here</ApiLink>.
+You can find all available settings <ApiLink type="interfaces" module="@starker-xp/baklavajs-renderer-vue" name="IViewSettings">here</ApiLink>.

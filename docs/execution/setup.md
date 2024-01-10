@@ -22,8 +22,8 @@ Mathematically speaking, it should perform this function: `f(a, b) = a + b`.
 This is done in Baklava as follows:
 
 ```js
-import { defineNode, NodeInterface } from "@baklavajs/core";
-import { NumberInterface, SelectInterface } from "@baklavajs/renderer-vue";
+import { defineNode, NodeInterface } from "@starker-xp/baklavajs-core";
+import { NumberInterface, SelectInterface } from "@starker-xp/baklavajs-renderer-vue";
 
 export default defineNode({
     type: "AddNode",
@@ -60,8 +60,8 @@ The calculate function needs to return an object that contains all the outputs a
 The general setup is independent of which engine you choose.
 
 ```js
-import { Editor } from "@baklavajs/core";
-import { DependencyEngine } from "@baklavajs/engine";
+import { Editor } from "@starker-xp/baklavajs-core";
+import { DependencyEngine } from "@starker-xp/baklavajs-engine";
 
 const editor = new Editor();
 const engine = new DependencyEngine(editor);
@@ -83,6 +83,7 @@ engine.runOnce({ offset: 5 });
 
 In this case you need to register a hook beforehand.
 This hook is called for every calculation; except the ones triggered manually with `engine.runOnce()`
+
 ```ts
 const token = Symbol("token");
 engine.hooks.gatherCalculationData.subscribe(token, () => {
@@ -115,7 +116,7 @@ The values are not applied to the output interfaces inside the graph.
 If you want to use the output interfaces to display the calculation result in the graph, you can use the `applyResult` function provided by the engine:
 
 ```ts
-import { applyResult } from "@baklavajs/engine";
+import { applyResult } from "@starker-xp/baklavajs-engine";
 
 const token = Symbol();
 engine.events.afterRun.subscribe(token, (result) => {

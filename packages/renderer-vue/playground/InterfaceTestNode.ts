@@ -1,5 +1,5 @@
-import { defineNode } from "@baklavajs/core";
-import { setType } from "@baklavajs/interface-types";
+import { defineNode } from "@starker-xp/baklavajs-core";
+import { setType } from "@starker-xp/baklavajs-interface-types";
 import {
     ButtonInterface,
     CheckboxInterface,

@@ -1,4 +1,4 @@
-import { IConnection } from "@baklavajs/core";
+import { IConnection } from "@starker-xp/baklavajs-core";
 import { TestNode } from "./testNode";
 import { containsCycle, CycleError, sortTopologically } from "../src";
 

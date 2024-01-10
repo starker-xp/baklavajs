@@ -1,9 +1,9 @@
 {
-    "name": "@baklavajs/core",
+    "name": "@starker-xp/baklavajs-core",
     "version": "2.3.0",
     "description": "Core logic of BaklavaJS, a graph editor / node editor for the web",
     "author": "newcat <freddy.wagner@web.de>",
-    "homepage": "https://newcat.github.io/baklavajs",
+    "homepage": "https://github.com/starker-xp/baklavajs",
     "license": "MIT",
     "files": [
         "dist/*"
@@ -20,13 +20,13 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/newcat/baklavajs.git"
+        "url": "git+https://github.com/starker-xp/baklavajs.git"
     },
     "bugs": {
-        "url": "https://github.com/newcat/baklavajs/issues"
+        "url": "https://github.com/starker-xp/baklavajs/issues"
     },
     "dependencies": {
-        "@baklavajs/events": "^2.3.0",
+        "@starker-xp/baklavajs-events": "^2.3.0",
         "uuid": "^9.0.1"
     },
     "devDependencies": {

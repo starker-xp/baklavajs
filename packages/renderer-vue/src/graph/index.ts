@@ -1,5 +1,5 @@
 import { Ref } from "vue";
-import { Graph } from "@baklavajs/core";
+import { Graph } from "@starker-xp/baklavajs-core";
 import { ICommandHandler } from "../commands";
 import { registerCreateSubgraphCommand } from "./createSubgraph.command";
 import { registerDeleteNodesCommand } from "./deleteNodes.command";

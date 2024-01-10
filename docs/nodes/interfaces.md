@@ -23,7 +23,7 @@ Examples for such scenarios include:
 In such cases, the port can be turned off when creating the node interface:
 
 ```js
-import { NodeInterface } from "baklavajs";
+import { NodeInterface } from "@starker-xp/baklavajs";
 new NodeInterface("My Interface", 0).setPort(false);
 ```
 
@@ -35,8 +35,8 @@ The component allows the user to set the value of the node interface manually.
 The components receives these props:
 
 -   `modelValue`: The value of the interface. The type of this prop is dependent on the type of the value
--   `node` (type: <ApiLink type="classes" module="@baklavajs/core" name="AbstractNode">AbstractNode</ApiLink>): The node instance in which this interface lives
--   `intf` (type: <ApiLink type="classes" module="@baklavajs/core" name="NodeInterface">NodeInterface</ApiLink>): The instance of the node interface
+-   `node` (type: <ApiLink type="classes" module="@starker-xp/baklavajs-core" name="AbstractNode">AbstractNode</ApiLink>): The node instance in which this interface lives
+-   `intf` (type: <ApiLink type="classes" module="@starker-xp/baklavajs-core" name="NodeInterface">NodeInterface</ApiLink>): The instance of the node interface
 
 To update the value of the interface, the component can emit the `update:modelValue` event with the new value.
 
@@ -74,7 +74,7 @@ To use this component, use the `setComponent()` function of the node interface:
 
 ```js
 import { markRaw } from "vue";
-import { NodeInterface } from "baklavajs";
+import { NodeInterface } from "@starker-xp/baklavajs";
 import MyComponent from "MyComponent.vue";
 new NodeInterface("My Interface", 0).setComponent(markRaw(MyComponent));
 ```
@@ -114,7 +114,7 @@ Instead, a new class can be created that extends the base `NodeInterface` (or on
 
 ```js
 import { markRaw } from "vue";
-import { NodeInterface, setType } from "baklavajs";
+import { NodeInterface, setType } from "@starker-xp/baklavajs";
 import MyComponent from "MyComponent.vue";
 
 class MyNodeInterface extends NodeInterface {

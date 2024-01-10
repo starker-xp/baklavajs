@@ -15,8 +15,8 @@ By default, the dependency engine doesn't allow multiple connections to a single
 You can, however, opt-in and allow multiple connections:
 
 ```ts
-import { defineNode, NodeInterface } from "@baklavajs/core";
-import { allowMultipleConnections } from "@baklavajs/engine";
+import { defineNode, NodeInterface } from "@starker-xp/baklavajs-core";
+import { allowMultipleConnections } from "@starker-xp/baklavajs-engine";
 
 export default defineNode({
     inputs: {

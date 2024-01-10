@@ -1,11 +1,11 @@
-# `@baklavajs/events`
+# `@starker-xp/baklavajs-events`
 
 > TODO: description
 
 ## Usage
 
 ```
-const events = require('@baklavajs/events');
+const events = require('@starker-xp/baklavajs-events');
 
 // TODO: DEMONSTRATE API
 ```

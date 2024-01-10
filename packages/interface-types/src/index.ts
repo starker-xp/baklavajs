@@ -1,10 +1,10 @@
 /**
- * @module @baklavajs/interface-types
+ * @module @starker-xp/baklavajs-interface-types
  */
 
-import type { Editor, NodeInterface } from "@baklavajs/core";
-import type { IBaklavaViewModel } from "@baklavajs/renderer-vue";
-import type { BaseEngine } from "@baklavajs/engine";
+import type { Editor, NodeInterface } from "@starker-xp/baklavajs-core";
+import type { IBaklavaViewModel } from "@starker-xp/baklavajs-renderer-vue";
+import type { BaseEngine } from "@starker-xp/baklavajs-engine";
 
 export interface IConversion<I, O> {
     targetType: string;

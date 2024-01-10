@@ -6,7 +6,7 @@ export default defineConfig({
     description: "Graph / node editor in the browser using VueJS",
     themeConfig: {
         editLink: {
-            pattern: "https://github.com/newcat/baklavajs/edit/master/docs/:path",
+            pattern: "https://github.com/starker-xp/baklavajs/edit/master/docs/:path",
         },
         externalLinkIcon: true,
         nav: [
@@ -62,6 +62,6 @@ export default defineConfig({
             { text: "Browser Build", link: "/browser-build.md" },
             { text: "Migrating from Baklava v1", link: "/migration.md" },
         ],
-        socialLinks: [{ icon: "github", link: "https://github.com/newcat/baklavajs" }],
+        socialLinks: [{ icon: "github", link: "https://github.com/starker-xp/baklavajs" }],
     },
 });

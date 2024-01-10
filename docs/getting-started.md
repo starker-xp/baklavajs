@@ -9,10 +9,10 @@ For more information see [Browser Build](./browser-build.md)
 
 BaklavaJS is split into multiple packages:
 
--   `@baklavajs/core`: Contains all the core elements that Baklava needs to work
--   `@baklavajs/engine`: The engine is used to execute the graph
--   `@baklavajs/interface-types`: Adds the functionality to assign types to interfaces, which allows only certain connections to be created
--   `@baklavajs/renderer-vue`: Used to display and edit the graph in a Vue 3 application
+-   `@starker-xp/baklavajs-core`: Contains all the core elements that Baklava needs to work
+-   `@starker-xp/baklavajs-engine`: The engine is used to execute the graph
+-   `@starker-xp/baklavajs-interface-types`: Adds the functionality to assign types to interfaces, which allows only certain connections to be created
+-   `@starker-xp/baklavajs-renderer-vue`: Used to display and edit the graph in a Vue 3 application
 
 You can install the packages individually or use the combined `baklavajs` package:
 
@@ -41,8 +41,8 @@ Now you can use Baklava in your Vue application:
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { EditorComponent, useBaklava } from "@baklavajs/renderer-vue";
-import "@baklavajs/themes/dist/syrup-dark.css";
+import { EditorComponent, useBaklava } from "@starker-xp/baklavajs-renderer-vue";
+import "@starker-xp/baklavajs-themes/dist/syrup-dark.css";
 
 export default defineComponent({
     components: {
@@ -67,7 +67,7 @@ To create a node you can use the `defineNode()` method:
 
 ```ts
 // file: MyNode.ts
-import { defineNode, NodeInterface, NumberInterface, SelectInterface } from "baklavajs";
+import { defineNode, NodeInterface, NumberInterface, SelectInterface } from "@starker-xp/baklavajs";
 
 export default defineNode({
     type: "MyNode",

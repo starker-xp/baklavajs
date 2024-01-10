@@ -15,7 +15,7 @@ export default defineConfig({
             formats: ["umd", "es"],
         },
         rollupOptions: {
-            external: ["vue", "@baklavajs/core", "@baklavajs/events"],
+            external: ["vue", "@starker-xp/baklavajs-core", "@starker-xp/baklavajs-events"],
             output: {
                 globals: {
                     vue: "Vue",

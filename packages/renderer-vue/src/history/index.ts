@@ -1,5 +1,5 @@
 import { reactive, Ref, ref, watch } from "vue";
-import { Graph } from "@baklavajs/core";
+import { Graph } from "@starker-xp/baklavajs-core";
 
 import type { ICommandHandler, ICommand } from "../commands";
 

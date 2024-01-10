@@ -1,4 +1,4 @@
-import { defineNode } from "@baklavajs/core";
+import { defineNode } from "@starker-xp/baklavajs-core";
 
 export default defineNode({
     type: "CommentNode",

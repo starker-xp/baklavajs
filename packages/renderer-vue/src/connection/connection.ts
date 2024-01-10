@@ -1,4 +1,4 @@
-import { NodeInterface } from "@baklavajs/core";
+import { NodeInterface } from "@starker-xp/baklavajs-core";
 
 export enum TemporaryConnectionState {
     NONE,

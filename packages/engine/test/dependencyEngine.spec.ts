@@ -9,7 +9,7 @@ import {
     NodeInterface,
     defineNode,
     getGraphNodeTypeString,
-} from "@baklavajs/core";
+} from "@starker-xp/baklavajs-core";
 import { TestNode } from "./testNode";
 import {
     AfterNodeCalculationEventData,

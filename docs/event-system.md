@@ -10,7 +10,7 @@ The token can be any reference-type (for example and object, array, or `this` wh
 It is provided when adding an event listener and provided again when removing the listener.
 
 ```ts
-import { BaklavaEvent } from "@baklavajs/events";
+import { BaklavaEvent } from "@starker-xp/baklavajs-events";
 const ev = new BaklavaEvent<string, null>(null);
 const token = Symbol();
 ev.subscribe(token, (data) => {
@@ -33,7 +33,7 @@ This is done by calling the `prevent` function in a listener function.
 Most preventable events have the `before` prefix in their name.
 
 ```ts
-import { PreventableBaklavaEvent } from "@baklavajs/events";
+import { PreventableBaklavaEvent } from "@starker-xp/baklavajs-events";
 
 const ev = new PreventableBaklavaEvent<string, null>(null);
 
@@ -85,13 +85,14 @@ Thanks to _proxied events_ this is no longer the case in Baklava v2.
 Let's say you want to listen to the `update` event of every node in all graphs:
 
 ```ts
-const token = Symbol()
+const token = Symbol();
 editor.nodeEvents.update.subscribe(token, (data, node) => {
     // put your code here
 });
 ```
 
 As you can see, events actually receive two arguments:
+
 1. The event data, like in Baklava v1
 2. The entity that emitted the event
 

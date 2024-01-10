@@ -1,4 +1,4 @@
-import { Graph } from "@baklavajs/core";
+import { Graph } from "@starker-xp/baklavajs-core";
 import { Ref } from "vue";
 import type { ICommand, ICommandHandler } from "../commands";
 import { SAVE_SUBGRAPH_COMMAND } from "./saveSubgraph.command";
@@ -10,7 +10,7 @@ export type SwitchToMainGraphCommand = ICommand<void>;
 export function registerSwitchToMainGraphCommand(
     displayedGraph: Ref<Graph>,
     handler: ICommandHandler,
-    switchGraph: SwitchGraph
+    switchGraph: SwitchGraph,
 ) {
     handler.registerCommand<SwitchToMainGraphCommand>(SWITCH_TO_MAIN_GRAPH_COMMAND, {
         canExecute: () => displayedGraph.value !== displayedGraph.value.editor.graph,

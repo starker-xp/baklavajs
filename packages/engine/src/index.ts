@@ -1,5 +1,5 @@
 /**
- * @module @baklavajs/engine
+ * @module @starker-xp/baklavajs-engine
  */
 
 export * from "./applyResult";

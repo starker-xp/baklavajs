@@ -29,7 +29,7 @@
 
 <script setup lang="ts">
 import { computed, inject, onMounted, onUpdated, Ref, ref } from "vue";
-import { AbstractNode, NodeInterface } from "@baklavajs/core";
+import { AbstractNode, NodeInterface } from "@starker-xp/baklavajs-core";
 import { useViewModel } from "../utility";
 import {
     ITemporaryConnectionHandler,
