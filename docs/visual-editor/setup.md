@@ -65,6 +65,28 @@ export default defineComponent({
 
 Settings can be changed by accessing the `settings` property of the view model right after creating it or reactively at any moment later.
 
+### Properties
+
+| name                               | data type         | default |
+| ---------------------------------- | ----------------- | ------- |
+| useStraightConnections             | boolean           | false   |
+| minimap.enabled                    | boolean           | false   |
+| toolbar.enabled                    | boolean           | true    |
+| palette.enabled                    | boolean           | true    |
+| background.gridSize                | number            | 100     |
+| background.gridDivision            | number            | 5       |
+| background.subGridVisibleThreshold | number            | 0.6     |
+| sidebar.enabled                    | boolean           | true    |
+| sidebar.width                      | number            | 5       |
+| sidebar.resizable                  | boolean           | true    |
+| displayValueOnHover                | boolean           | false   |
+| nodes.defaultWidth                 | boolean           | 200     |
+| nodes.maxWidth                     | number            | 320     |
+| nodes.minWidth                     | boolean           | 150     |
+| nodes.resizable                    | boolean           | false   |
+| contextMenu.enabled                | boolean           | true    |
+| contextMenu.additionalItems        | ContextMenuItem[] | []      |
+
 For example, to enable displaying the value of a node interface on hover:
 
 ```ts
