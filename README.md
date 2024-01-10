@@ -11,7 +11,7 @@ Graph / node editor in the browser using VueJS
 
 | Package                               | Version                                                                                                   |
 | ------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| baklavajs                             | ![npm](https://img.shields.io/npm/v/baklavajs.svg?style=flat-square)                                      |
+| @starker-xp/baklavajs                 | ![npm](https://img.shields.io/npm/v/baklavajs.svg?style=flat-square)                                      |
 | @starker-xp/baklavajs-core            | ![npm (scoped)](https://img.shields.io/npm/v/@starker-xp/baklavajs-core.svg?style=flat-square)            |
 | @starker-xp/baklavajs-engine          | ![npm (scoped)](https://img.shields.io/npm/v/@starker-xp/baklavajs-engine.svg?style=flat-square)          |
 | @starker-xp/baklavajs-interface-types | ![npm (scoped)](https://img.shields.io/npm/v/@starker-xp/baklavajs-interface-types.svg?style=flat-square) |
