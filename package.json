@@ -1,5 +1,5 @@
 {
-    "name": "baklavajs-monorepo",
+    "name": "@starker-xp/baklavajs-monorepo",
     "private": true,
     "scripts": {
         "playground": "cd packages/renderer-vue && yarn run dev",
