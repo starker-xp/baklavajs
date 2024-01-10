@@ -1,6 +1,6 @@
 {
     "name": "@starker-xp/baklavajs-engine",
-    "version": "2.3.0",
+    "version": "2.3.1",
     "description": "Execute BaklavaJS graphs",
     "author": "newcat <freddy.wagner@web.de>",
     "homepage": "https://github.com/starker-xp/baklavajs",
@@ -26,8 +26,8 @@
         "url": "https://github.com/starker-xp/baklavajs/issues"
     },
     "dependencies": {
-        "@starker-xp/baklavajs-core": "^2.3.0",
-        "@starker-xp/baklavajs-events": "^2.3.0"
+        "@starker-xp/baklavajs-core": "^2.3.1",
+        "@starker-xp/baklavajs-events": "^2.3.1"
     },
     "devDependencies": {
         "@types/jest": "^29.5.11",
