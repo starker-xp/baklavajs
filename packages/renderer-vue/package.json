@@ -1,6 +1,6 @@
 {
     "name": "@starker-xp/baklavajs-renderer-vue",
-    "version": "2.3.2",
+    "version": "2.3.3",
     "description": "Vue frontend for BaklavaJS",
     "author": "newcat <freddy.wagner@web.de>",
     "homepage": "https://github.com/starker-xp/baklavajs",
@@ -31,8 +31,8 @@
         "url": "https://github.com/starker-xp/baklavajs/issues"
     },
     "dependencies": {
-        "@starker-xp/baklavajs-core": "^2.3.2",
-        "@starker-xp/baklavajs-events": "^2.3.2"
+        "@starker-xp/baklavajs-core": "^2.3.3",
+        "@starker-xp/baklavajs-events": "^2.3.3"
     },
     "devDependencies": {
         "@types/resize-observer-browser": "^0.1.11",

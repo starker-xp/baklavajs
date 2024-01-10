@@ -1,6 +1,6 @@
 {
     "name": "@starker-xp/baklavajs",
-    "version": "2.3.2",
+    "version": "2.3.3",
     "description": "Full installation of BaklavaJS including the core and all plugins",
     "author": "newcat <freddy.wagner@web.de>",
     "homepage": "https://github.com/starker-xp/baklavajs",
@@ -29,11 +29,11 @@
         "access": "public"
     },
     "dependencies": {
-        "@starker-xp/baklavajs-core": "^2.3.2",
-        "@starker-xp/baklavajs-engine": "^2.3.2",
-        "@starker-xp/baklavajs-interface-types": "^2.3.2",
-        "@starker-xp/baklavajs-renderer-vue": "^2.3.2",
-        "@starker-xp/baklavajs-themes": "^2.3.2"
+        "@starker-xp/baklavajs-core": "^2.3.3",
+        "@starker-xp/baklavajs-engine": "^2.3.3",
+        "@starker-xp/baklavajs-interface-types": "^2.3.3",
+        "@starker-xp/baklavajs-renderer-vue": "^2.3.3",
+        "@starker-xp/baklavajs-themes": "^2.3.3"
     },
     "devDependencies": {
         "esbuild": "^0.19.11",

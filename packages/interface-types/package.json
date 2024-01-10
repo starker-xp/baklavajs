@@ -1,6 +1,6 @@
 {
     "name": "@starker-xp/baklavajs-interface-types",
-    "version": "2.3.2",
+    "version": "2.3.3",
     "description": "Add types to node interfaces for BaklavaJS",
     "author": "newcat <freddy.wagner@web.de>",
     "homepage": "https://github.com/starker-xp/baklavajs",
@@ -26,9 +26,9 @@
         "url": "https://github.com/starker-xp/baklavajs/issues"
     },
     "dependencies": {
-        "@starker-xp/baklavajs-core": "^2.3.2",
-        "@starker-xp/baklavajs-engine": "^2.3.2",
-        "@starker-xp/baklavajs-renderer-vue": "^2.3.2"
+        "@starker-xp/baklavajs-core": "^2.3.3",
+        "@starker-xp/baklavajs-engine": "^2.3.3",
+        "@starker-xp/baklavajs-renderer-vue": "^2.3.3"
     },
     "devDependencies": {
         "@types/jest": "^29.5.11",

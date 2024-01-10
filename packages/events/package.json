@@ -1,6 +1,6 @@
 {
     "name": "@starker-xp/baklavajs-events",
-    "version": "2.3.2",
+    "version": "2.3.3",
     "description": "Implementation of the Baklava event system. Mainly intended for internal use in the Baklava ecosystem",
     "author": "newcat <freddy.wagner@web.de>",
     "homepage": "https://github.com/starker-xp/baklavajs#readme",
