@@ -39,5 +39,5 @@
         "esbuild": "^0.19.11",
         "typescript": "^5.3.3"
     },
-    "gitHead": "fb03ce387881082ff20677529fd95b5508f7ecdc"
+    "gitHead": "68d9c619a02506f6bd0dffc402fbbb51d17603d8"
 }
