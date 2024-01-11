@@ -97,6 +97,16 @@ editor.graph.addNode(new TestNode());
 editor.graph.addNode(new OutputNode());
 editor.graph.addNode(new BuilderTestNode());
 editor.graph.addNode(new AdvancedNode());
+function addNodeWithCoordinates(nodeType: any, x: number, y: number) {
+    const n = new nodeType();
+    editor.graph.addNode(n);
+    n.position.x = x;
+    n.position.y = y;
+    return n;
+}
+
+
+const dialog1 = addNodeWithCoordinates(DialogNode, 550, 140);
 
 const calculate = async () => {
     console.log(await engine.runOnce("def"));
